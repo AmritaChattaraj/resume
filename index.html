@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrita Chattaraj - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/Screenshot 2024-06-05 120052.png" width="330" height="300" alt="Amrita Chattaraj" class="profile-photo">
+            <div class="header-text">
+                <h1>Amrita Chattaraj</h1>
+                <a href="/Amrita (1) (1).pdf" class="button" target="_blank"><b>Download Resume</b></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I am Amrita Chattaraj, a BE-CSE student. Welcome to my personal portfolio website.</p>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="clickable-box lightblue-box">
+            <h2><u><b>About Me</b></u></h2>
+            <p><i>Hello! I'm <b><u>Amrita Chattaraj</u></b>, a dynamic and driven BE-CSE student from Chandigarh University, where I’m crafting my passion for technology into a promising career. With a toolkit that includes HTML, CSS, JavaScript, SQL, Java, Python, and cloud computing, I thrive on building innovative solutions and turning ideas into reality.
+
+                <br><br>Beyond coding, I excel in communication and soft skills, which complement my technical prowess and make me a valuable team player. Whether collaborating on a project or diving into the latest tech trends, my enthusiasm is boundless.
+                
+                <br><br>Welcome to my portfolio! Dive in to explore my projects, and join me on my exciting journey through the world of technology.</i></p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2><u><b>Projects</b></u></h2>
+        <div class="clickable-box green-box" onclick="toggleProjectDetails('joom')">
+            <h3><u>Joom</u></h3>
+            <div id="joom" class="project-details">
+                <p><i>Welcome to Joom, the ultimate platform for seamless video communication crafted by Amrita Chattaraj. Designed with cutting-edge technology, Joom brings people closer, whether for work, study, or catching up with friends. Experience crystal-clear video, effortless screen sharing, and interactive collaboration features all in one sleek and intuitive interface. Dive into Joom and redefine the way you connect, collaborate, and communicate.
+                    <br><br>
+                    Features include:<br><br>
+                    • Architected and deployed a dynamic Real-Time Video Calling Web Application leveraging Getstream and Next.js .<br>
+                    • Facilitated group video calling with the capacity to host up to 7 participants concurrently in a video call.<br>
+                    • Enabled screen sharing functionality, allowing users to share their screen or specific windows with fellow participants.<br>
+                    • Implemented real-time chat features and clerk for authentication and user management functionalities.<br>
+                </i></p>
+                <a href="https://joom-lac.vercel.app/sign-in?redirect_url=https%3A%2F%2Fjoom-lac.vercel.app%2F" target="_main" class="button"><b>View Project</b></a>
+            </div>
+        </div>
+        <div class="clickable-box red-box" onclick="toggleProjectDetails('teutter')">
+            <h3><u>Teutter</u></h3>
+            <div id="teutter" class="project-details">
+                <p><i>• Developed an end-to-end fully responsive social media Web application from scratch, equipped with fully functional
+                    features from Authentication to create post, delete post, interact with peoples.<br>
+                    • Implemented features such as secure user authentication, search functionality, user profile customization options and
+                    privacy settings giving users control over their personal information and interactions on the platform.<br>
+                    • Succesfully added a feature to track users’ IP Address using Django Signals to enforce platform guidelines, enabling
+                    identification and blocking of users who violate policies, thereby enhancing platform integrity.<br>
+                </i></p>
+                <a href="https://github.com/Sateesh2004/Teutter" target="_main" class="button">View Repo</a>
+            </div>
+        </div>
+        <div class="clickable-box yellow-box" onclick="toggleProjectDetails('talentx')">
+            <h3><u>TalentX</u></h3>
+            <div id="talentx" class="project-details">
+                <p><i>• Created a robust job portal platform, ”Talent-X,” facilitating seamless interaction between companies and job seekers.<br>
+                    • Implemented Django’s built-in user authentication and authorization systems allowing users to register, log in, and
+                    manage their profiles and ORM to design various models for user’ data.<br>
+                    • Integrated an advanced interactive job listing system based on different job categories, enabling employers to post job
+                    openings with detailed descriptions such as location, industry, and job type, portfolio.<br>
+                </i></p>
+                <a href="https://sateesh2.pythonanywhere.com/" target="_main" class="button">View Project</a>
+            </div>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    
+    <section id="contact">
+        <h2><u><b>Contact Me</b></u></h2>
+        <p>If you would like to get in touch, please email me at <a href="amritachattar01482@gmail.com">amritachattar01482@gmail.com</a>.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="button">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Amrita Chattaraj. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
